@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>RudraM-II - India's Advanced Air-Launched Missile</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="https://asbros.github.io/css/main.css" type="text/css" media="all" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+ <style>
+  /* Reset default margin and padding */
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Playwrite IN", serif;
+  }
+
+  /* Global Styles */
+  body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f9f9f9;
+     color: #333;
+     line-height: 1.6;
+     scroll-behavior: smooth;
+  }
+
+  .container {
+     width: 90%;
+     max-width: 1200px;
+     margin: 0 auto;
+  }
+
+  /* Header Styles with background image */
+  header {
+     background: url('https://assets.api.uizard.io/api/cdn/stream/3e0a6d6a-ebb2-4f5e-98c9-4a31cda1ebe4.png') no-repeat center center/cover;
+     color: #000;
+     padding: 50px 20px;
+     text-align: center;
+     position: relative;
+  }
+
+  header h1 {
+     font-size: 3.5em;
+     font-weight: bold;
+     color: #fff;
+     text-transform: uppercase;
+     font-family: "Jost" !important;
+     letter-spacing: 2px;
+     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+     animation: fadeInUp 1.5s ease-out;
+     margin: 0px;
+  }
+
+  nav ul {
+     list-style: none;
+     margin-top: 20px;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+  }
+
+  nav ul li {
+     display: inline-block;
+     border-radius: 5px;
+     transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  nav ul li:hover {
+     transform: scale(1.1);
+     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul li a {
+     text-decoration: none;
+     padding: 7px 10px;
+     font-family: "Jost" !important;
+     font-size: 1em;
+     color: white;
+     text-transform: uppercase;
+     font-weight: bold;
+  }
+
+  nav ul li a span {
+     margin-right: 7px;
+  }
+
+  nav ul li a:hover {
+     color: #ffb703;
+  }
+
+  /* Section Styles */
+  section {
+     padding: 60px 20px;
+     background-color: #fff;
+     border-bottom: 1px solid #ddd;
+  }
+
+  section h2 {
+     font-size: 2.5em;
+     font-weight: bold;
+     color: #5468ff;
+     text-align: center;
+     font-family: "Jost" !important;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+  }
+
+  section p,
+  section ul {
+     font-size: 1.1em;
+     color: #555;
+     line-height: 1.8;
+     text-align: justify;
+     margin-top: 20px;
+  }
+
+  section ul {
+     list-style-type: disc;
+     padding-left: 40px;
+  }
+
+  .section-image {
+     width: 100%;
+     max-width: 800px;
+     height: auto;
+     margin: 30px auto;
+     display: block;
+     border-radius: 12px;
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .section-image:hover {
+     transform: scale(1.05);
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Footer Styles */
+  footer {
+     background-color: #333;
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+     font-size: 1em;
+  }
+
+  footer p {
+     font-size: 1em;
+     letter-spacing: 0.5px;
+  }
+
+  .swiper {
+     width: 300px;
+     height: 250px;
+  }
+
+  .swiper-slide img {
+     height: 100%;
+     width: 100%;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+     header h1 {
+         font-size: 2.5em;
+     }
+
+     nav ul {
+         flex-direction: row;
+         gap: 10px;
+         flex-wrap: wrap;
+     }
+
+     nav ul li {
+         width: 120px;
+         text-align: center;
+     }
+
+     section h2 {
+         font-size: 2em;
+     }
+
+     section p,
+     section ul {
+         font-size: 1em;
+     }
+
+     .section-image {
+         max-width: 100%;
+     }
+  }
+
+  /* Keyframe Animations */
+  @keyframes fadeInUp {
+     from {
+         opacity: 0;
+         transform: translateY(30px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+ <header>
+  <div class="container">
+   <h1>RudraM-II</h1>
+   <nav>
+    <ul>
+     <li><a href="#about" class="btn lg-blue white try shadow radius-10"><span class="material-symbols-outlined">
+info
+</span>About</a></li>
+     <li><a href="#features" class="btn bg-black white try shadow radius-10"><span class="material-symbols-outlined">
+bolt
+</span>Features</a></li>
+     <li><a href="#history" class="btn lg-yellow white try shadow radius-10"><span class="material-symbols-outlined">
+timeline
+</span>History</a></li>
+      <li><a href="#video" class="btn lg-red white try shadow radius-10"><svg width="30px" height="30px" style="margin-right: 7px;" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width: 3px;}</style></defs><path class="a" d="M43.1124,14.394a5.0056,5.0056,0,0,0-3.5332-3.5332c-2.3145-.8936-24.7326-1.3314-31.2358.0256A5.0059,5.0059,0,0,0,4.81,14.42c-1.0446,4.583-1.1239,14.4914.0256,19.1767A5.006,5.006,0,0,0,8.369,37.13c4.5829,1.0548,26.3712,1.2033,31.2358,0a5.0057,5.0057,0,0,0,3.5332-3.5333C44.2518,28.6037,44.3311,19.31,43.1124,14.394Z"/><path class="a" d="M30.5669,23.9952,20.1208,18.004V29.9863Z"/></svg>Video</a></li>
+   </ul>
+    
+   </nav>
+  </div>
+ </header>
+
+ <section id="about">
+  <div class="container">
+   <!-- Slider main container -->
+   <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+     <!-- Slides -->
+     <div class="swiper-slide"><img src="https://assets.api.uizard.io/api/cdn/stream/6ae958ab-3936-4bb6-89ba-7ad95ca4fe41.png"> </div>
+     <div class="swiper-slide"><img src="https://assets.api.uizard.io/api/cdn/stream/f5779306-99f6-45c5-bb8b-b665eb85ce1d.png"></div>
+     <div class="swiper-slide"><img src="https://assets.api.uizard.io/api/cdn/stream/22dbf37f-0477-4b9b-8b69-f344fd596905.png"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+   </div>
+<br>
+   <h2>About RudraM-II</h2>
+   <img src="https://assets.api.uizard.io/api/cdn/stream/446af7f2-a7dd-4675-bbfd-04c1c20fa213.png" alt="RudraM-II" class="section-image">
+   <p>The RudraM-II is an advanced air-launched missile developed by India. Designed to neutralize enemy radar systems and air defense mechanisms, it is part of India's indigenous weapons program under DRDO. With its precision targeting and extended range, RudraM-II is an essential component of India's defense capabilities.</p>
+  </div>
+ </section>
+
+ <section id="features">
+  <div class="container">
+   <h2>Features</h2>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxvn7wWb2IhtX0Qd9E5h4imwh-HkzHLY9iQ&s" alt="Rudram Features" class="section-image">
+   <ul>
+    <li><strong>Advanced Seeker:</strong> Equipped with an advanced seeker for pinpoint accuracy against radar targets.</li>
+    <li><strong>Long Range:</strong> Capable of engaging targets at extended ranges, ensuring operational superiority.</li>
+    <li><strong>Multiple Launch Platforms:</strong> Compatible with a wide range of fighter jets in the Indian Air Force fleet.</li>
+    <li><strong>Electronic Counter-Countermeasures (ECCM):</strong> Designed to operate in heavily jammed environments.</li>
+   </ul>
+  </div>
+ </section>
+
+ <section id="history">
+  <div class="container">
+   <h2>History</h2>
+   <img src="https://assets.api.uizard.io/api/cdn/stream/ec94b002-99d9-4b10-8c88-c225cac5a9a9.png" alt="RudraM-II History" class="section-image">
+   <p>Development of the Rudram series began in the early 2010s, with RudraM-II being unveiled as a major leap in India's missile capabilities. It is a key element of India's strategy to maintain air dominance and deter enemy defenses. The project showcases India's growing expertise in defense technology and self-reliance in weapon development.</p>
+  </div>
+ </section>
+
+ <footer>
+  <div class="container">
+   <p>&copy; KENZ 26 RKMVD</p>
+   <br>
+  </div>
+ </footer>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+  const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+   autoplay: {
+   delay: 2000,
+ },
+  effect: 'cards',
+  cardsEffect: {
+    // ...
+  }
+});
+ </script>
+</body>
+
+</html>
