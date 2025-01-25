@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirbhay Missile - Long-Range Cruise Missile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://asbros.github.io/css/main.css" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Playwrite IN", serif;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: url('https://cdn.leonardo.ai/users/e32281cf-decc-421e-9a8f-526dceaaefea/generations/da4dc028-b624-4a3d-b35f-dca304a2f118/segments/2:4:1/Flux_Dev_Highresolution_crystalclear_photographs_of_the_Nirbha_1.jpeg') no-repeat center center/cover;
+            color: #000;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "Jost" !important;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        nav ul li:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 7px 10px;
+            font-family: "Jost" !important;
+            font-size: 1em;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav ul li a span {
+            margin-right: 7px;
+        }
+
+        nav ul li a:hover {
+            color: #ffb703;
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #5468ff;
+            text-align: center;
+            font-family: "Jost" !important;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        section p,
+        section ul {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        section ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .section-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 30px auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .section-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1em;
+        }
+
+        footer p {
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        .swiper {
+            width: 300px;
+            height: 250px;
+        }
+
+        .swiper-slide img {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul {
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                width: 120px;
+                text-align: center;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            section p,
+            section ul {
+                font-size: 1em;
+            }
+
+            .section-image {
+                max-width: 100%;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Nirbhay Missile</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="btn lg-blue white try shadow radius-10"><span class="material-symbols-outlined">info</span>About</a></li>
+                    <li><a href="#features" class="btn bg-black white try shadow radius-10"><span class="material-symbols-outlined">bolt</span>Features</a></li>
+                    <li><a href="#history" class="btn lg-yellow white try shadow radius-10"><span class="material-symbols-outlined">timeline</span>History</a></li>
+                    <li><a href="#video" class="btn lg-red white try shadow radius-10"><svg width="30px" height="30px" style="margin-right: 7px;" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <style>
+                                        .a {
+                                            fill: none;
+                                            stroke: #fff;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-width: 3px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="a" d="M43.1124,14.394a5.0056,5.0056,0,0,0-3.5332-3.5332c-2.3145-.8936-24.7326-1.3314-31.2358.0256A5.0059,5.0059,0,0,0,4.81,14.42c-1.0446,4.583-1.1239,14.4914.0256,19.1767A5.006,5.006,0,0,0,8.369,37.13c4.5829,1.0548,26.3712,1.2033,31.2358,0a5.0057,5.0057,0,0,0,3.5332-3.5333C44.2518,28.6037,44.3311,19.31,43.1124,14.394Z" />
+                                <path class="a" d="M30.5669,23.9952,20.1208,18.004V29.9863Z" />
+                            </svg>Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://www.livefistdefence.com/wp-content/uploads/2017/11/C_TkkRtXsAA7eJL.jpg"> </div>
+                    <div class="swiper-slide"><img src="https://indianexpress.com/wp-content/uploads/2014/10/nirbhay.jpg"></div>
+                    <div class="swiper-slide"><img src="https://affairscloud.com/assets/uploads/2021/06/India-successfully-test-fired-nuclear-capable.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <br>
+            <h2>About Nirbhay</h2>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*iBKgo-MOnpe3G6-owzud9g.jpeg" style="width:100%">
+            <p>The Nirbhay Missile is India's long-range, subsonic cruise missile designed for precision targeting and versatility. Developed by DRDO, this missile is capable of carrying nuclear warheads and is engineered for both land and sea-based deployment.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXuGgdSFhNWt8WVOy66S_mVJ4DI1u-qhw8QpFgz0MDRXPN6ZrsO0U6nIyvkn00fYxmJHkVSFmmK8jQNU84cJpCaRjGgByRw8Oyvehu95LswQUpxczgc1S1P1Oed-G4UTbTZSApXL6XGtcJQfG8NwRZdKOR_UiJtaQMP-1VDTzUpvkj6fWCBEBCUnV3Ijg/s16000/Nirbhay_Cruise_Missile.jpg" alt="Nirbhay Features" class="section-image">
+            <ul>
+                <li><strong>Long Range:</strong> Capable of engaging targets over 1,000 km away.</li>
+                <li><strong>Subsonic Speed:</strong> Operates at a speed of 0.7 Mach for stealth and precision.</li>
+                <li><strong>Terrain Hugging:</strong> Low-altitude flight path to evade radar detection.</li>
+                <li><strong>Multiple Payloads:</strong> Designed to carry nuclear and conventional warheads.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="history">
+        <div class="container">
+            <h2>History</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PQqAZlHAQeaZ22bsJyhel-TWFY4KSXwxvw&s" alt="Nirbhay History" class="section-image">
+            <p>The Nirbhay Missile was first tested in 2013 as part of India's advanced missile development program. Since its inception, it has undergone numerous successful tests to improve reliability and performance, making it a critical component of India's defense strategy.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Developed by KENZ RKMVD</p>
+            <br>
+        </div>
+    </footer>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            autoplay: {
+                delay: 2000,
+            },
+            effect: 'cards',
+            cardsEffect: {}
+        });
+    </script>
+</body>
+
+</html>
